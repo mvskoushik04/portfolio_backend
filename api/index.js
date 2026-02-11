@@ -6,7 +6,7 @@ const chatRoutes = require("../routes/chat");
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:5173"],
+  origin: ["https://portfoliofrontendcode-a1frmf3ha-koushiks-projects-5c01a8dc.vercel.app/"],
   methods: ["GET", "POST"],
   credentials: true
 }));

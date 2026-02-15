@@ -6,7 +6,10 @@ const chatRoutes = require("../routes/chat");
 const app = express();
 
 app.use(cors({
-  origin: ["https://portfoliofrontendcode-a1frmf3ha-koushiks-projects-5c01a8dc.vercel.app/"],
+  origin: [
+    "https://portfoliofrontendcode.vercel.app",
+    /^https:\/\/portfoliofrontendcode.*\.vercel\.app$/  // preview deployments
+  ],
   methods: ["GET", "POST"],
   credentials: true
 }));
